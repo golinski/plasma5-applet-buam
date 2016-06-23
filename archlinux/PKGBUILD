@@ -1,0 +1,35 @@
+# Maintainer: Michał Golinski <golinski (at) amu edu pl>
+
+pkgbase=buam
+pkgname=('plasma5-applet-buam')
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A KF5 plasmoid, which displays books from BUAM."
+arch=('i686' 'x86_64')
+url="https://github.com/golinski/plasma5-applet-buam"
+license=('GPL3')
+makedepends=('cmake' 'extra-cmake-modules' 'plasma-framework')
+source=("git://github.com/golinski/plasma5-applet-buam.git")
+install="plasma5-applet-buam.install"
+md5sums=('SKIP')
+
+prepare() {
+  rm -rf "${srcdir}/build"
+  mkdir "${srcdir}/build"
+}
+
+
+build() {
+  cd "${srcdir}/build"
+  cmake -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
+        ".."
+  make
+}
+
+
+package() {
+  cd "${srcdir}/build"
+  make DESTDIR="${pkgdir}" install
+}
