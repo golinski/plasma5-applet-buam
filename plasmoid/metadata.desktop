@@ -11,9 +11,9 @@ X-Plasma-MainScript=ui/main.qml
 
 X-KDE-PluginInfo-Author=Michał Goliński
 X-KDE-PluginInfo-Email=golinski@amu.edu.pl
-X-KDE-PluginInfo-Name=org.kde.plasma.private.buamDEBUG
+X-KDE-PluginInfo-Name=org.kde.plasma.private.buam
 X-KDE-PluginInfo-Version=1.0
-X-KDE-PluginInfo-Website=https://github.com/golinski/plasma5-plasmoid-buam
+X-KDE-PluginInfo-Website=https://github.com/golinski/plasma5-applet-buam
 X-KDE-PluginInfo-Category=Education
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPLv3
