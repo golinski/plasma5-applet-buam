@@ -5,7 +5,7 @@ before_script:
   - pushd ~
   - pwd
   - mkdir kf5-release && cd kf5-release
-  - wget https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz -O kf5.tar.xz
+  - wget https://github.com/kf5builds/precompiled-kf5-linux/releases/download/kf5.45/kf5-5.45.0-Release-ubuntu-trusty-amd64.tar.xz -O kf5.tar.xz
   - tar xf kf5.tar.xz
   - popd
   - pwd
