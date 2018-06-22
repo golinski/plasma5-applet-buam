@@ -7,6 +7,6 @@ before_script:
   - ls
   - mkdir build
   - cd build
-  - cmake .. -DCMAKE_PREFIX_PATH=~/root/kf5-release
+  - ECM_DIR=~/root/kf5-release/share/ECM/cmake cmake .. -DCMAKE_PREFIX_PATH=~/root/kf5-release
 script:
   - make
