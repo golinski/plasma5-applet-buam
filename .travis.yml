@@ -2,13 +2,13 @@ language: cpp
 compiler:
   - gcc
 before_script:
-  - pushd
-  - cd ~
+  - pushd ~
   - pwd
   - mkdir kf5-release && cd kf5-release
   - wget https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz -O kf5.tar.xz
   - tar xf kf5.tar.xz
   - popd
+  - pwd
   - mkdir build && cd build
   - cmake .. -DCMAKE_PREFIX_PATH=~/kf5-release
 script:
