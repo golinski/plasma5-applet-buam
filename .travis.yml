@@ -1,0 +1,12 @@
+language: cpp
+compiler:
+  - gcc
+before_script:
+  - wget https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz -O kf5.tar.xz
+  - tar xf kf5.tar.xz
+  - ls
+  - mkdir build
+  - cd build
+  - cmake .. -DCMAKE_PREFIX_PATH=~/root/kf5-release
+script:
+  - make
