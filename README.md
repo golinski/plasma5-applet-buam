@@ -1,5 +1,7 @@
 # plasma5-plasmoid-buam
 
+[![Build Status](https://travis-ci.org/golinski/plasma5-applet-buam.svg?branch=master)](https://travis-ci.org/golinski/plasma5-applet-buam)
+
 This KDE Plasma 5 widget displays the books one has borrowed from the Adam Mickiewicz University in Poznań
 library together with the time left until one has to return them back.
 
