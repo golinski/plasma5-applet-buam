@@ -9,7 +9,7 @@ before_script:
   - tar xf kf5.tar.xz
   - cd ~
   - pwd
-  - mkdir build
+  - ls build
   - cd build
   - cmake .. -DCMAKE_PREFIX_PATH=~/kf5-release
 script:
